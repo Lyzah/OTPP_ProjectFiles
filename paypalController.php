@@ -31,7 +31,7 @@ class paypalController extends Controller
        public function fail(Request $request){
         $request = ($request->input('reason'));
 
-       /* return $request->input('id');*/
+       
         return view('payFailed', ['reason' => $request]);
    }
 }
